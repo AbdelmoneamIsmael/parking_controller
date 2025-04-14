@@ -50,6 +50,24 @@
     "please_select_image": "الرجاء اختيار صورة",
     "selectOperation": "اختر العملية",
     "carIn":"تسجيل دخول السيارة",
-    "carOut":"تسجيل خروج السيارة"
+    "carOut":"تسجيل خروج السيارة",
+    "carNumber":"رقم السيارة",
+    "driverName":"اسم السائق",
+    "enterCarNumber":"ادخل رقم السيارة",
+    "enterDriverName":"ادخل اسم السائق",
+    "enterDate":"ادخل التاريخ",
+    "carColor":"لون السيارة",
+    "enterCarColor":"ادخل لون السيارة",
+    "carType":"نوع السيارة",
+    "enterCarType":"ادخل نوع السيارة",
+    "carInTime":"وقت تسجيل دخول السيارة",
+    "carOutTime":"وقت تسجيل خروج السيارة",
+    "driverPhone":"هاتف السائق",
+    "enterDriverPhone":"ادخل هاتف السائق",
+    "enterCarInTime":"ادخل وقت تسجيل دخول السيارة"
+
+
+
+
 
 }

@@ -114,7 +114,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get please_enter_confirm_password => 'Please enter confirm password';
 
   @override
-  String get please_enter_phone => 'Please enter phone';
+  String get please_enter_phone => 'Please enter phone number';
 
   @override
   String get please_enter_name => 'Please enter name';
@@ -132,7 +132,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get please_enter_valid_confirm_password => 'Please enter a valid confirm password';
 
   @override
-  String get please_enter_valid_phone => 'Please enter a valid phone';
+  String get please_enter_valid_phone => 'Please enter a valid phone number';
 
   @override
   String get please_enter_valid_name => 'Please enter a valid name';
@@ -159,8 +159,50 @@ class AppLocalizationsEn extends AppLocalizations {
   String get selectOperation => 'Select Operation';
 
   @override
-  String get carIn => 'Car In';
+  String get carIn => 'Car Entry';
 
   @override
-  String get carOut => 'Car Out';
+  String get carOut => 'Car Exit';
+
+  @override
+  String get carNumber => 'Car Number';
+
+  @override
+  String get driverName => 'Driver Name';
+
+  @override
+  String get enterCarNumber => 'Enter car number';
+
+  @override
+  String get enterDriverName => 'Enter driver name';
+
+  @override
+  String get enterDate => 'Enter date';
+
+  @override
+  String get carColor => 'Car Color';
+
+  @override
+  String get enterCarColor => 'Enter car color';
+
+  @override
+  String get carType => 'Car Type';
+
+  @override
+  String get enterCarType => 'Enter car type';
+
+  @override
+  String get carInTime => 'Car Entry Time';
+
+  @override
+  String get carOutTime => 'Car Exit Time';
+
+  @override
+  String get driverPhone => 'Driver Phone';
+
+  @override
+  String get enterDriverPhone => 'Enter driver phone';
+
+  @override
+  String get enterCarInTime => 'Enter car entry time';
 }

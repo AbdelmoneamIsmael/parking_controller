@@ -308,7 +308,7 @@ abstract class AppLocalizations {
   /// No description provided for @please_enter_phone.
   ///
   /// In en, this message translates to:
-  /// **'Please enter phone'**
+  /// **'Please enter phone number'**
   String get please_enter_phone;
 
   /// No description provided for @please_enter_name.
@@ -344,7 +344,7 @@ abstract class AppLocalizations {
   /// No description provided for @please_enter_valid_phone.
   ///
   /// In en, this message translates to:
-  /// **'Please enter a valid phone'**
+  /// **'Please enter a valid phone number'**
   String get please_enter_valid_phone;
 
   /// No description provided for @please_enter_valid_name.
@@ -398,14 +398,98 @@ abstract class AppLocalizations {
   /// No description provided for @carIn.
   ///
   /// In en, this message translates to:
-  /// **'Car In'**
+  /// **'Car Entry'**
   String get carIn;
 
   /// No description provided for @carOut.
   ///
   /// In en, this message translates to:
-  /// **'Car Out'**
+  /// **'Car Exit'**
   String get carOut;
+
+  /// No description provided for @carNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Car Number'**
+  String get carNumber;
+
+  /// No description provided for @driverName.
+  ///
+  /// In en, this message translates to:
+  /// **'Driver Name'**
+  String get driverName;
+
+  /// No description provided for @enterCarNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter car number'**
+  String get enterCarNumber;
+
+  /// No description provided for @enterDriverName.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter driver name'**
+  String get enterDriverName;
+
+  /// No description provided for @enterDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter date'**
+  String get enterDate;
+
+  /// No description provided for @carColor.
+  ///
+  /// In en, this message translates to:
+  /// **'Car Color'**
+  String get carColor;
+
+  /// No description provided for @enterCarColor.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter car color'**
+  String get enterCarColor;
+
+  /// No description provided for @carType.
+  ///
+  /// In en, this message translates to:
+  /// **'Car Type'**
+  String get carType;
+
+  /// No description provided for @enterCarType.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter car type'**
+  String get enterCarType;
+
+  /// No description provided for @carInTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Car Entry Time'**
+  String get carInTime;
+
+  /// No description provided for @carOutTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Car Exit Time'**
+  String get carOutTime;
+
+  /// No description provided for @driverPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Driver Phone'**
+  String get driverPhone;
+
+  /// No description provided for @enterDriverPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter driver phone'**
+  String get enterDriverPhone;
+
+  /// No description provided for @enterCarInTime.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter car entry time'**
+  String get enterCarInTime;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

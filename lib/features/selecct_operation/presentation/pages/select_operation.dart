@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:parking_controller/core/app_texts/app_localizations.dart';
+import 'package:parking_controller/core/routes/page_routes.dart';
+import 'package:parking_controller/core/routes/pages_keys.dart';
 import 'package:parking_controller/core/themes/styles/app_text_style.dart';
 import 'package:parking_controller/gen/assets.gen.dart';
 
@@ -22,6 +25,9 @@ class SelectOperation extends StatelessWidget {
             child: OperationWidget(
               iconPath: Assets.icons.carIn,
               title: AppLocalizations.of(context).carIn,
+              onTap: () {
+                GoRouter.of(context).push(PagesKeys.addNewOperation);
+              },
             ),
           ),
           Expanded(

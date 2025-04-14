@@ -163,4 +163,46 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get carOut => 'تسجيل خروج السيارة';
+
+  @override
+  String get carNumber => 'رقم السيارة';
+
+  @override
+  String get driverName => 'اسم السائق';
+
+  @override
+  String get enterCarNumber => 'ادخل رقم السيارة';
+
+  @override
+  String get enterDriverName => 'ادخل اسم السائق';
+
+  @override
+  String get enterDate => 'ادخل التاريخ';
+
+  @override
+  String get carColor => 'لون السيارة';
+
+  @override
+  String get enterCarColor => 'ادخل لون السيارة';
+
+  @override
+  String get carType => 'نوع السيارة';
+
+  @override
+  String get enterCarType => 'ادخل نوع السيارة';
+
+  @override
+  String get carInTime => 'وقت تسجيل دخول السيارة';
+
+  @override
+  String get carOutTime => 'وقت تسجيل خروج السيارة';
+
+  @override
+  String get driverPhone => 'هاتف السائق';
+
+  @override
+  String get enterDriverPhone => 'ادخل هاتف السائق';
+
+  @override
+  String get enterCarInTime => 'ادخل وقت تسجيل دخول السيارة';
 }

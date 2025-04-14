@@ -19,7 +19,7 @@ class AppTextFieldWithTitle extends StatelessWidget {
     this.maxLines,
     this.fillColor,
     this.prefixIcon,
-    this.suffixIcon,
+    this.suffixIcon, this.onChanged, this.onTap,
   });
   final String title, hint;
   final bool scure, enabeld, readOnly;
@@ -31,6 +31,9 @@ class AppTextFieldWithTitle extends StatelessWidget {
   final TextInputType? keyboardType;
   final int? maxLines;
   final Widget? prefixIcon, suffixIcon;
+   final void Function(String)? onChanged;
+ final  void Function()? onTap;
+
 
   @override
   Widget build(BuildContext context) {
@@ -59,6 +62,8 @@ class AppTextFieldWithTitle extends StatelessWidget {
           inputFormatters: inputFormatters,
           keyboardType: keyboardType,
           maxLines: maxLines,
+          onChanged: onChanged,
+          onTap: onTap,
         ),
       ],
     );
@@ -81,7 +86,7 @@ class AppFormField extends StatelessWidget {
     this.fillColor,
     this.prefixIcon,
     this.suffixIcon,
-    this.withBorder = true,
+    this.withBorder = true, this.onChanged, this.onTap,
   });
   final String hint;
   final bool scure, enabeld, readOnly, withBorder;
@@ -93,12 +98,16 @@ class AppFormField extends StatelessWidget {
   final int? maxLines;
   final Color? fillColor;
   final Widget? prefixIcon, suffixIcon;
+ final void Function(String)? onChanged;
+ final  void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
       obscureText: scure,
+      onTap: onTap,
+      onChanged:onChanged ,
       readOnly: readOnly,
       enabled: enabeld,
       validator: validator,
