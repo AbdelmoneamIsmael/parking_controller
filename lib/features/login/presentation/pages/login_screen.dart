@@ -4,6 +4,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:parking_controller/core/app_texts/app_localizations.dart';
 import 'package:parking_controller/core/app_texts/app_localizations_ar.dart';
 import 'package:parking_controller/core/app_texts/app_localizations_en.dart';
+import 'package:parking_controller/core/routes/page_routes.dart';
+import 'package:parking_controller/core/routes/pages_keys.dart';
 import 'package:parking_controller/core/themes/styles/app_text_style.dart';
 import 'package:parking_controller/core/widgets/app_text_field.dart';
 import 'package:parking_controller/core/widgets/primary_button.dart';
@@ -17,7 +19,12 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BlocBuilder<LoginCubit, LoginState>(
+      body: BlocConsumer<LoginCubit, LoginState>(
+        listener: (context, state) {
+          if (state is LoginSuccess) {
+            PageRoutes.clearAndNavigate(PagesKeys.selectOperation);
+          }
+        },
         builder: (context, state) {
           final cubit = BlocProvider.of<LoginCubit>(context);
           return CustomScrollView(

@@ -47,5 +47,8 @@
   "please_select_theme": "Please select a theme",
   "please_select_date": "Please select a date",
   "please_select_time": "Please select a time",
-  "please_select_image": "Please select an image"
+  "please_select_image": "Please select an image",
+  "selectOperation": "Select Operation",
+  "carIn":"Car In",
+  "carOut":"Car Out"
 }

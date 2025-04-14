@@ -154,4 +154,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get please_select_image => 'Please select an image';
+
+  @override
+  String get selectOperation => 'Select Operation';
+
+  @override
+  String get carIn => 'Car In';
+
+  @override
+  String get carOut => 'Car Out';
 }

@@ -388,6 +388,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please select an image'**
   String get please_select_image;
+
+  /// No description provided for @selectOperation.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Operation'**
+  String get selectOperation;
+
+  /// No description provided for @carIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Car In'**
+  String get carIn;
+
+  /// No description provided for @carOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Car Out'**
+  String get carOut;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

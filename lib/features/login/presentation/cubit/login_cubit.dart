@@ -15,6 +15,8 @@ class LoginCubit extends Cubit<LoginState> {
   }
 
   void makeLogin() {
-    if (formKey.currentState!.validate()) {}
+    if (formKey.currentState!.validate()) {
+      emit(LoginSuccess());
+    }
   }
 }

@@ -154,4 +154,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get please_select_image => 'الرجاء اختيار صورة';
+
+  @override
+  String get selectOperation => 'اختر العملية';
+
+  @override
+  String get carIn => 'تسجيل دخول السيارة';
+
+  @override
+  String get carOut => 'تسجيل خروج السيارة';
 }

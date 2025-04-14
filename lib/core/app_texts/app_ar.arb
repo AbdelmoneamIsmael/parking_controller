@@ -47,6 +47,9 @@
     "please_select_theme": "الرجاء اختيار الوضع",
     "please_select_date": "الرجاء اختيار التاريخ",
     "please_select_time": "الرجاء اختيار الوقت",
-    "please_select_image": "الرجاء اختيار صورة"
+    "please_select_image": "الرجاء اختيار صورة",
+    "selectOperation": "اختر العملية",
+    "carIn":"تسجيل دخول السيارة",
+    "carOut":"تسجيل خروج السيارة"
 
 }

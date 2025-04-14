@@ -12,6 +12,12 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/car_in.svg
+  String get carIn => 'assets/icons/car_in.svg';
+
+  /// File path: assets/icons/car_out.svg
+  String get carOut => 'assets/icons/car_out.svg';
+
   /// File path: assets/icons/cart_icon.svg
   String get cartIcon => 'assets/icons/cart_icon.svg';
 
@@ -36,11 +42,16 @@ class $AssetsIconsGen {
   /// File path: assets/icons/search_icon.svg
   String get searchIcon => 'assets/icons/search_icon.svg';
 
+  /// File path: assets/icons/select_operation.svg
+  String get selectOperation => 'assets/icons/select_operation.svg';
+
   /// File path: assets/icons/tabels.svg
   String get tabels => 'assets/icons/tabels.svg';
 
   /// List of all assets
   List<String> get values => [
+        carIn,
+        carOut,
         cartIcon,
         googleLogo,
         info,
@@ -49,6 +60,7 @@ class $AssetsIconsGen {
         notification,
         profile,
         searchIcon,
+        selectOperation,
         tabels
       ];
 }

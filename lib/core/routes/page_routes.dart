@@ -6,6 +6,8 @@ import 'package:parking_controller/core/const/app_const.dart';
 import 'package:parking_controller/features/login/presentation/cubit/login_cubit.dart';
 import 'package:parking_controller/features/login/presentation/pages/login_screen.dart';
 import 'package:parking_controller/core/bloc/bloc_observer.dart';
+import 'package:parking_controller/features/selecct_operation/presentation/cubit/selecct_operation_cubit.dart';
+import 'package:parking_controller/features/selecct_operation/presentation/pages/select_operation.dart';
 
 class PageRoutes {
   static GoRouter router = GoRouter(
@@ -23,13 +25,22 @@ class PageRoutes {
           );
         },
       ),
+      GoRoute(
+        path: PagesKeys.selectOperation,
+        builder: (context, state) {
+          return BlocProvider(
+            create: (context) => SelecctOperationCubit(),
+            child: const SelectOperation(),
+          );
+        },
+      ),
     ],
   );
   static clearAndNavigate(String path) {
     while (router.canPop() == true) {
       router.pop();
     }
-    router.goNamed(path);
+    router.go(path);
   }
 }
 
