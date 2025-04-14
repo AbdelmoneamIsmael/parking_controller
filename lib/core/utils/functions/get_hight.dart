@@ -1,0 +1,1 @@
+double getTextHeight(double fontSize, double lineHeight) => lineHeight / fontSize ;
