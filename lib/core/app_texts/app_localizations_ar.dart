@@ -205,4 +205,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get enterCarInTime => 'ادخل وقت تسجيل دخول السيارة';
+
+  @override
+  String get prePaid => 'الدفع المسبق';
+
+  @override
+  String get enterprePaid => '(١٠.٠٠) الدفع ';
+
+  @override
+  String get requiredParameter => 'هذا الحقل مطلوب';
+
+  @override
+  String get gift => ' هدية';
 }

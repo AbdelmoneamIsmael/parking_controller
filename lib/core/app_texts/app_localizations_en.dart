@@ -205,4 +205,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get enterCarInTime => 'Enter car entry time';
+
+  @override
+  String get prePaid => 'Prepaid';
+
+  @override
+  String get enterprePaid => '(10.00)prepaid';
+
+  @override
+  String get requiredParameter => 'This field is required';
+
+  @override
+  String get gift => ' Gift';
 }

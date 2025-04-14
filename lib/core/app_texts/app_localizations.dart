@@ -490,6 +490,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Enter car entry time'**
   String get enterCarInTime;
+
+  /// No description provided for @prePaid.
+  ///
+  /// In en, this message translates to:
+  /// **'Prepaid'**
+  String get prePaid;
+
+  /// No description provided for @enterprePaid.
+  ///
+  /// In en, this message translates to:
+  /// **'(10.00)prepaid'**
+  String get enterprePaid;
+
+  /// No description provided for @requiredParameter.
+  ///
+  /// In en, this message translates to:
+  /// **'This field is required'**
+  String get requiredParameter;
+
+  /// No description provided for @gift.
+  ///
+  /// In en, this message translates to:
+  /// **' Gift'**
+  String get gift;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

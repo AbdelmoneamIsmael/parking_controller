@@ -11,6 +11,7 @@ class AppTextFieldWithTitle extends StatelessWidget {
     this.scure = false,
     this.enabeld = true,
     this.readOnly = false,
+    this.important = true,
     this.controller,
     this.validator,
     this.autofillHints,
@@ -19,10 +20,12 @@ class AppTextFieldWithTitle extends StatelessWidget {
     this.maxLines,
     this.fillColor,
     this.prefixIcon,
-    this.suffixIcon, this.onChanged, this.onTap,
+    this.suffixIcon,
+    this.onChanged,
+    this.onTap,
   });
   final String title, hint;
-  final bool scure, enabeld, readOnly;
+  final bool scure, enabeld, readOnly, important;
   final TextEditingController? controller;
   final String? Function(String?)? validator;
   final Iterable<String>? autofillHints;
@@ -31,9 +34,8 @@ class AppTextFieldWithTitle extends StatelessWidget {
   final TextInputType? keyboardType;
   final int? maxLines;
   final Widget? prefixIcon, suffixIcon;
-   final void Function(String)? onChanged;
- final  void Function()? onTap;
-
+  final void Function(String)? onChanged;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -42,12 +44,14 @@ class AppTextFieldWithTitle extends StatelessWidget {
         Row(
           children: [
             Text(title, style: AppTextStyle.meduim(context)),
-            Text(
-              "*",
-              style: AppTextStyle.regular(
-                context,
-              ).copyWith(color: Theme.of(context).primaryColor),
-            ),
+            important
+                ? Text(
+                  "*",
+                  style: AppTextStyle.regular(
+                    context,
+                  ).copyWith(color: Theme.of(context).primaryColor),
+                )
+                : const SizedBox(),
           ],
         ),
         const SizedBox(height: 13),
@@ -86,7 +90,9 @@ class AppFormField extends StatelessWidget {
     this.fillColor,
     this.prefixIcon,
     this.suffixIcon,
-    this.withBorder = true, this.onChanged, this.onTap,
+    this.withBorder = true,
+    this.onChanged,
+    this.onTap,
   });
   final String hint;
   final bool scure, enabeld, readOnly, withBorder;
@@ -98,8 +104,8 @@ class AppFormField extends StatelessWidget {
   final int? maxLines;
   final Color? fillColor;
   final Widget? prefixIcon, suffixIcon;
- final void Function(String)? onChanged;
- final  void Function()? onTap;
+  final void Function(String)? onChanged;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -107,7 +113,7 @@ class AppFormField extends StatelessWidget {
       controller: controller,
       obscureText: scure,
       onTap: onTap,
-      onChanged:onChanged ,
+      onChanged: onChanged,
       readOnly: readOnly,
       enabled: enabeld,
       validator: validator,

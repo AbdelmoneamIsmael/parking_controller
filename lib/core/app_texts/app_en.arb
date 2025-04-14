@@ -64,5 +64,9 @@
     "carOutTime": "Car Exit Time",
         "driverPhone":"Driver Phone",
     "enterDriverPhone":"Enter driver phone",
-    "enterCarInTime":"Enter car entry time"
+    "enterCarInTime":"Enter car entry time",
+    "prePaid":"Prepaid",
+    "enterprePaid":"(10.00)prepaid",
+    "requiredParameter":"This field is required",
+    "gift":" Gift"
 }

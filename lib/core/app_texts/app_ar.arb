@@ -64,7 +64,11 @@
     "carOutTime":"وقت تسجيل خروج السيارة",
     "driverPhone":"هاتف السائق",
     "enterDriverPhone":"ادخل هاتف السائق",
-    "enterCarInTime":"ادخل وقت تسجيل دخول السيارة"
+    "enterCarInTime":"ادخل وقت تسجيل دخول السيارة",
+    "prePaid":"الدفع المسبق",
+    "enterprePaid":"(١٠.٠٠) الدفع ",
+    "requiredParameter":"هذا الحقل مطلوب",
+    "gift":" هدية"
 
 
 
