@@ -217,4 +217,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get gift => ' Gift';
+
+  @override
+  String get qrCode => 'By scanning the code';
 }

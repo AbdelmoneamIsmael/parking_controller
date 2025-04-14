@@ -5,6 +5,8 @@ import 'package:go_router/go_router.dart';
 import 'package:parking_controller/core/const/app_const.dart';
 import 'package:parking_controller/features/car_in_page/presentation/cubit/car_in_page_cubit.dart';
 import 'package:parking_controller/features/car_in_page/presentation/pages/car_in_page.dart';
+import 'package:parking_controller/features/car_out/presentation/cubit/car_out_cubit.dart';
+import 'package:parking_controller/features/car_out/presentation/pages/car_out_screen.dart';
 import 'package:parking_controller/features/login/presentation/cubit/login_cubit.dart';
 import 'package:parking_controller/features/login/presentation/pages/login_screen.dart';
 import 'package:parking_controller/core/bloc/bloc_observer.dart';
@@ -42,6 +44,15 @@ class PageRoutes {
           return BlocProvider(
             create: (context) => CarInPageCubit(),
             child: const CarInPage(),
+          );
+        },
+      ),
+      GoRoute(
+        path: PagesKeys.signOperationout,
+        builder: (context, state) {
+          return BlocProvider(
+            create: (context) => CarOutCubit(),
+            child: const CarOutScreen(),
           );
         },
       ),

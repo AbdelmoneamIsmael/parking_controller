@@ -12,6 +12,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/CAR_NUMBER.svg
+  String get carNumber => 'assets/icons/CAR_NUMBER.svg';
+
   /// File path: assets/icons/car_in.svg
   String get carIn => 'assets/icons/car_in.svg';
 
@@ -42,6 +45,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/profile.svg
   String get profile => 'assets/icons/profile.svg';
 
+  /// File path: assets/icons/scan_qr.svg
+  String get scanQr => 'assets/icons/scan_qr.svg';
+
   /// File path: assets/icons/search_icon.svg
   String get searchIcon => 'assets/icons/search_icon.svg';
 
@@ -53,6 +59,7 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<String> get values => [
+        carNumber,
         carIn,
         carOut,
         cartIcon,
@@ -63,6 +70,7 @@ class $AssetsIconsGen {
         logout,
         notification,
         profile,
+        scanQr,
         searchIcon,
         selectOperation,
         tabels
@@ -76,8 +84,11 @@ class $AssetsImagesGen {
   AssetGenImage get elipse5 =>
       const AssetGenImage('assets/images/Elipse 5.png');
 
+  /// File path: assets/images/scan-qr.png
+  AssetGenImage get scanQr => const AssetGenImage('assets/images/scan-qr.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [elipse5];
+  List<AssetGenImage> get values => [elipse5, scanQr];
 }
 
 class Assets {

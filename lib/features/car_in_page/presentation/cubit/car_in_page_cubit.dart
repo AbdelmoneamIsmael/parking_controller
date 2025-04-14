@@ -62,7 +62,10 @@ class CarInPageCubit extends Cubit<CarInPageState> {
       CarModel carModel = CarModel(
         isPaid: isPrePaid,
         number: carNumberController.text,
-        prepaid: int.parse(prePaidController.text),
+        prepaid:
+            prePaidController.text.isEmpty
+                ? 0
+                : int.parse(prePaidController.text),
         driverName: driverNameController.text,
         phoneNumber: driverPhoneController.text,
         carColor: carColorController.text,

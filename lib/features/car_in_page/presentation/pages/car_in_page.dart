@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -65,6 +66,9 @@ class CarInPage extends StatelessWidget {
                               title: AppLocalizations.of(context).prePaid,
                               hint: AppLocalizations.of(context).enterprePaid,
                               keyboardType: TextInputType.number,
+                              inputFormatters: [
+                                FilteringTextInputFormatter.digitsOnly,
+                              ],
                               controller: cubit.prePaidController,
                               autofillHints: [AutofillHints.creditCardNumber],
                             ),

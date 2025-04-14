@@ -68,5 +68,6 @@
     "prePaid":"Prepaid",
     "enterprePaid":"(10.00)prepaid",
     "requiredParameter":"This field is required",
-    "gift":" Gift"
+    "gift":" Gift",
+    "qrCode":"By scanning the code"
 }

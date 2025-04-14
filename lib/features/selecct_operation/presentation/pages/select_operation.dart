@@ -34,6 +34,9 @@ class SelectOperation extends StatelessWidget {
             child: OperationWidget(
               iconPath: Assets.icons.carOut,
               title: AppLocalizations.of(context).carOut,
+              onTap: () {
+                GoRouter.of(context).push(PagesKeys.signOperationout);
+              },
             ),
           ),
           const SizedBox(),

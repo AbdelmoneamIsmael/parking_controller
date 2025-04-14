@@ -217,4 +217,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get gift => ' هدية';
+
+  @override
+  String get qrCode => 'عن طريق مسح الكود';
 }

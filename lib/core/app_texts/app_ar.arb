@@ -68,7 +68,9 @@
     "prePaid":"الدفع المسبق",
     "enterprePaid":"(١٠.٠٠) الدفع ",
     "requiredParameter":"هذا الحقل مطلوب",
-    "gift":" هدية"
+    "gift":" هدية",
+    "qrCode":"عن طريق مسح الكود"
+   
 
 
 
